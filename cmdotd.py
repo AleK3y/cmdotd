@@ -19,8 +19,13 @@ COLORS = (Fore.BLUE, Fore.CYAN, Fore.GREEN, Fore.MAGENTA, Fore.RED, Fore.YELLOW)
 
 UPDATE_SOURCE = "https://linux.die.net/man/"
 SECTIONS = ["1", "6", "8"]
-CACHEFILE = f"""{os.environ["HOME"]}/.cache/cmdotd/manpages.json"""		# Every now and then delete this file (back it up first)
+HOME = os.environ["HOME"] if os.name != "nt" else os.environ["USERPROFILE"]
+CACHEFILE = f"{HOME}/.cache/cmdotd/manpages.json"		# Every now and then delete this file (back it up first)
 MIRRORS = ["https://pastebin.com/raw/79Gb6y3V", "https://pastebin.com/raw/tnvMYmsZ"]		# Raw JSON Mirrors
+
+# Setting up for windows
+if os.name == "nt":
+	init()
 
 """
 Functions
