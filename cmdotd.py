@@ -2,7 +2,7 @@
 
 """
  # Command of the day
- Version 2 of my little bubbly bubble to randomize a command and give it's description
+ Version 2 of my little bubbly bubble to randomize a command and give its description
 
  > AleK3y, 14 June 2020;
 """
