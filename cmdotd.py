@@ -149,7 +149,7 @@ while True:
 	# Calculate the body respecting the width limit
 	body = [[]]
 	for word in description.split(" "):
-		if len(" ".join(body[-1])) + len(word) + 2 + 1 >= width:
+		if len(" ".join(body[-1] + [word])) + 2 + 1 >= width:
 			body.append([word])
 		else:
 			body[-1].append(word)
