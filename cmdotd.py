@@ -169,5 +169,5 @@ while True:
 	bubble.append("╰" + "─"*(longest + 2))
 
 	# Print it :D
-	print("\n".join(bubble))
+	print("\r" + "\n".join(bubble))
 	break
